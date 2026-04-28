@@ -6,13 +6,13 @@
 /*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 15:03:20 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/27 16:03:00 by jangonza         ###   ########.fr       */
+/*   Updated: 2026/04/28 11:51:19 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_itoa(int n)
+char	*ft_itoa(int n)
 {
 	char	*num;
 	int		temp_num;
@@ -47,5 +47,5 @@ char *ft_itoa(int n)
 		i++;
 	}
 	num[digit_num] = '\0';
-	return(*num);
+	return (num);
 }

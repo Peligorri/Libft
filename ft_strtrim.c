@@ -6,7 +6,7 @@
 /*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 18:26:26 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/27 18:45:13 by jangonza         ###   ########.fr       */
+/*   Updated: 2026/04/28 11:48:30 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,15 +25,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	{
 		i++;
 	}
-	s1lenset = ft_strlen(s1);
+	while (s1[s1lenset] != '\0')
+		s1lenset++;
 	while (s1[s1lenset] == *set)
 	{
 		s1lenset--;
 		j++;
 	}
-	str = (char *)malloc((ft_strlen(s1) - i - j) + 1);
-	if(!str)
-		return(NULL);
+	str = (char *)malloc((s1lenset - i - j) + 1);
+	if (!str)
+		return (NULL);
 	j = 0;
 	while (i != s1lenset)
 	{
@@ -42,5 +43,5 @@ char	*ft_strtrim(char const *s1, char const *set)
 		j++;
 	}
 	str[j] = '\0';
-	return (*str);
+	return (str);
 }
