@@ -21,6 +21,7 @@ char	*ft_strtrim(char const *s1, char const *set)
 
 	i = 0;
 	j = 0;
+	s1lenset = 0;
 	while (s1[i] == *set)
 	{
 		i++;

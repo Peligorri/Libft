@@ -20,7 +20,7 @@ int	ft_lstsize(t_list *lst)
 	i = 0;
 	if (!lst)
 		return (0);
-	*lstcpy = *lst;
+	lstcpy = lst;
 	while (lstcpy)
 	{
 		lstcpy = lstcpy->next;
