@@ -14,21 +14,33 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	*s;
+	char	inversenum[12];
 	int		i;
+	int		ncpy;
 
 	i = 0;
+	ncpy = n;
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
+		return ;
 	}
-	else
+	if (n < 0)
 	{
-		s = ft_itoa(n);
-		while (s[i] != '\0')
-		{
-			write(fd, &s[i], 1);
-			i++;
-		}
+		n = -n;
 	}
+	if (n == 0)
+	{
+		write(fd, "0", 1);
+		return ;
+	}
+	while (n > 0)
+	{
+		inversenum[i++] = (n % 10) + '0';
+		n = n / 10;
+	}
+	if (ncpy < 0)
+		inversenum[i++] = '-';
+	while (i > 0)
+		write(fd, &inversenum[--i], 1);
 }
