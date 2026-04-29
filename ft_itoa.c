@@ -15,37 +15,40 @@
 char	*ft_itoa(int n)
 {
 	char	*num;
-	int		temp_num;
+	long	temp;
 	int		digit_num;
 	int		i;
 
 	digit_num = 0;
-	temp_num = n;
-	if (temp_num < 0)
-	{
-		temp_num = temp_num * -1;
+	temp = n;
+	if (temp <= 0)
 		digit_num++;
-	}
-	while (temp_num > 0)
+	while (temp)
 	{
-		temp_num = temp_num / 10;
+		temp /= 10;
 		digit_num++;
 	}
 	num = malloc(sizeof(char) * (digit_num + 1));
-	temp_num = n;
-	if (n < 0)
+	if (!num)
+		return (NULL);
+	num[digit_num] = '\0';
+	if (n == 0)
+	{
+		num[0] = '0';
+		return (num);
+	}
+	temp = n;
+	if (temp < 0)
 	{
 		num[0] = '-';
+		temp = -temp;
 	}
-	i = 1;
-	if (temp_num < 0)
-		temp_num = temp_num * -1;
-	while (temp_num > 0)
+	i = digit_num - 1;
+	while (temp > 0)
 	{
-		num[digit_num - i] = (temp_num % 10) + '0';
-		temp_num = temp_num / 10;
-		i++;
+		num[i] = (temp % 10) + '0';
+		temp /= 10;
+		i--;
 	}
-	num[digit_num] = '\0';
 	return (num);
 }
