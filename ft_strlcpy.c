@@ -18,11 +18,9 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 
 	i = 0;
 	srclenset = 0;
-	if (!src)
-		return (0);
 	while (src[srclenset] != '\0')
 		srclenset++;
-	if (size == 0 || !dst)
+	if (size == 0)
 		return (srclenset);
 	while (src[i] != '\0' && i < size - 1)
 	{

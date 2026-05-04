@@ -18,8 +18,6 @@ int	ft_strlen(char *str)
 
 	num = 0;
 	i = 0;
-	if (!str)
-		return(0);
 	while (str[i] != '\0')
 	{
 		num++;
