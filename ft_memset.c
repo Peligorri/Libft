@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memset.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 13:44:24 by jangonza          #+#    #+#             */
 /*   Updated: 2026/04/24 14:09:55 by jangonza         ###   ########.fr       */

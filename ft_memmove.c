@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 13:44:01 by jangonza          #+#    #+#             */
 /*   Updated: 2026/04/24 14:10:21 by jangonza         ###   ########.fr       */

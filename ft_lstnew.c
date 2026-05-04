@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/28 12:59:10 by jangonza          #+#    #+#             */
 /*   Updated: 2026/04/28 13:02:45 by jangonza         ###   ########.fr       */

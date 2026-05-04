@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strncmp.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 12:53:11 by jangonza          #+#    #+#             */
 /*   Updated: 2026/04/24 12:53:13 by jangonza         ###   ########.fr       */

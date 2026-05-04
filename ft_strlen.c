@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/24 13:46:41 by jangonza          #+#    #+#             */
 /*   Updated: 2026/04/24 13:46:43 by jangonza         ###   ########.fr       */

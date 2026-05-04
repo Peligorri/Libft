@@ -3,7 +3,7 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+         #
+#    By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/04/24 13:48:23 by jangonza          #+#    #+#              #
 #    Updated: 2026/04/24 13:48:25 by jangonza         ###   ########.fr        #

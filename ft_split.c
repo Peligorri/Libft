@@ -3,7 +3,7 @@
 /*                                                        :::      ::::::::   */
 /*   ft_split.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.      +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/04/27 10:59:24 by jangonza          #+#    #+#             */
 /*   Updated: 2026/04/28 11:50:19 by jangonza         ###   ########.fr       */
@@ -62,17 +62,24 @@ void	ft_copy_final_array(char const *s, char c, char **final_array)
 		{
 			j = 0;
 			while (s[i] && s[i] != c)
-			{
-				final_array[k][j] = s[i];
-				i++;
-				j++;
-			}
+				final_array[k][j++] = s[i++];
 			final_array[k][j] = '\0';
 			k++;
 		}
 	}
 	final_array[k] = NULL;
 }
+
+void	ft_free_split(char **arr, int k)
+{
+	int	i;
+
+	i = 0;
+	while (i < k)
+		free(arr[i++]);
+	free(arr);
+}
+
 char	**ft_split(char const *s, char c)
 {
 	int		words_num;
@@ -98,7 +105,10 @@ char	**ft_split(char const *s, char c)
 			letter_num = ft_countletters(s, c, i);
 			final_array[k] = malloc(sizeof(char) * (letter_num + 1));
 			if (!final_array[k])
+			{
+				ft_free_split(final_array, k);
 				return (NULL);
+			}
 			k++;
 			while (s[i] && s[i] != c)
 				i++;
