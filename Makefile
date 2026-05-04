@@ -44,5 +44,7 @@ fclean: clean
 
 re: fclean all
 
+bonus: $(BONUS)
+
 .PHONY: all clean fclean re
 
