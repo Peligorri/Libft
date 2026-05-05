@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:43:17 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 14:11:38 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:37:48 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:37:51 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)

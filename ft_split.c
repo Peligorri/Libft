@@ -5,115 +5,93 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 10:59:24 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/28 11:50:19 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 12:50:14 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 12:50:18 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_countwords(char const *s, char c)
+static int	count_words(const char *s, char c)
 {
 	int	i;
-	int	words_num;
+	int	count;
 
 	i = 0;
-	words_num = 0;
+	count = 0;
 	while (s[i])
 	{
-		while (s[i] && s[i] == c)
+		while (s[i] == c)
 			i++;
 		if (s[i])
 		{
-			words_num++;
+			count++;
 			while (s[i] && s[i] != c)
 				i++;
 		}
 	}
-	return (words_num);
+	return (count);
 }
 
-int	ft_countletters(char const *s, char c, int i)
+static char	*word_dup(const char *s, int start, int end)
 {
-	int	letters_num;
+	char	*word;
+	int		i;
 
-	letters_num = 0;
-	while (s[i] && s[i] != c)
-	{
-		letters_num++;
-		i++;
-	}
-	return (letters_num);
+	i = 0;
+	word = malloc(end - start + 1);
+	if (!word)
+		return (NULL);
+	while (start < end)
+		word[i++] = s[start++];
+	word[i] = '\0';
+	return (word);
 }
 
-void	ft_copy_final_array(char const *s, char c, char **final_array)
+static void	free_all(char **arr, int k)
+{
+	while (k--)
+		free(arr[k]);
+	free(arr);
+}
+
+static int	fill_words(char **arr, const char *s, char c)
 {
 	int	i;
 	int	j;
-	int	k;
+	int	start;
 
 	i = 0;
-	k = 0;
+	j = 0;
 	while (s[i])
 	{
-		while (s[i] && s[i] == c)
+		while (s[i] == c)
 			i++;
-		if (s[i])
+		start = i;
+		while (s[i] && s[i] != c)
+			i++;
+		if (i > start)
 		{
-			j = 0;
-			while (s[i] && s[i] != c)
-				final_array[k][j++] = s[i++];
-			final_array[k][j] = '\0';
-			k++;
+			arr[j] = word_dup(s, start, i);
+			if (!arr[j])
+				return (free_all(arr, j), -1);
+			j++;
 		}
 	}
-	final_array[k] = NULL;
-}
-
-void	ft_free_split(char **arr, int k)
-{
-	int	i;
-
-	i = 0;
-	while (i < k)
-		free(arr[i++]);
-	free(arr);
+	arr[j] = NULL;
+	return (0);
 }
 
 char	**ft_split(char const *s, char c)
 {
-	int		words_num;
-	int		letter_num;
-	int		i;
-	int		k;
-	char	**final_array;
+	char	**arr;
 
 	if (!s)
 		return (NULL);
-	words_num = ft_countwords(s, c);
-	final_array = malloc(sizeof(char *) * (words_num + 1));
-	if (!final_array)
+	arr = malloc(sizeof(char *) * (count_words(s, c) + 1));
+	if (!arr)
 		return (NULL);
-	i = 0;
-	k = 0;
-	while (s[i])
-	{
-		while (s[i] && s[i] == c)
-			i++;
-		if (s[i])
-		{
-			letter_num = ft_countletters(s, c, i);
-			final_array[k] = malloc(sizeof(char) * (letter_num + 1));
-			if (!final_array[k])
-			{
-				ft_free_split(final_array, k);
-				return (NULL);
-			}
-			k++;
-			while (s[i] && s[i] != c)
-				i++;
-		}
-	}
-	ft_copy_final_array(s, c, final_array);
-	return (final_array);
+	if (fill_words(arr, s, c) == -1)
+		return (NULL);
+	return (arr);
 }

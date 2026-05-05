@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:47:34 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:47:36 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 14:15:26 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 14:15:29 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_tolower(int c)

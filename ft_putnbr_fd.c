@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 17:54:44 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/27 18:15:46 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:40:16 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:40:19 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,33 +14,21 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	char	inversenum[12];
-	int		i;
-	int		ncpy;
-
-	i = 0;
-	ncpy = n;
 	if (n == -2147483648)
 	{
 		write(fd, "-2147483648", 11);
 		return ;
 	}
-	if (n < 0)
+	else if (n < 0)
 	{
-		n = -n;
+		ft_putchar_fd('-', fd);
+		ft_putnbr_fd(-n, fd);
 	}
-	if (n == 0)
+	else if (n >= 10)
 	{
-		write(fd, "0", 1);
-		return ;
+		ft_putnbr_fd(n / 10, fd);
+		ft_putchar_fd(n % 10 + '0', fd);
 	}
-	while (n > 0)
-	{
-		inversenum[i++] = (n % 10) + '0';
-		n = n / 10;
-	}
-	if (ncpy < 0)
-		inversenum[i++] = '-';
-	while (i > 0)
-		write(fd, &inversenum[--i], 1);
+	else
+		ft_putchar_fd(n + '0', fd);
 }

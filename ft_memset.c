@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:44:24 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 14:09:55 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:39:01 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:39:04 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memset(void *s, int c, size_t n)

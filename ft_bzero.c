@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:39:41 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 14:13:09 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:06:23 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:07:06 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	ft_bzero(void *s, size_t n)

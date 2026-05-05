@@ -5,8 +5,8 @@
 #                                                     +:+ +:+         +:+      #
 #    By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/04/24 13:48:23 by jangonza          #+#    #+#              #
-#    Updated: 2026/04/24 13:48:25 by jangonza         ###   ########.fr        #
+#    Created: 2026/05/05 14:20:45 by jangonza          #+#    #+#              #
+#    Updated: 2026/05/05 14:21:13 by jangonza         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,8 +43,6 @@ fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
-
-bonus: $(BONUS)
 
 .PHONY: all clean fclean re
 

@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:45:43 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:45:46 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 13:32:53 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 13:32:56 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t size)

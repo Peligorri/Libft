@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:42:15 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:42:18 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:09:44 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:09:47 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isdigit(int c)

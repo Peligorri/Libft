@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:40:57 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:40:59 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:08:06 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:08:11 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isalnum(int c)

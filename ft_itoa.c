@@ -5,12 +5,37 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 15:03:20 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/28 11:51:19 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:10:42 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:10:45 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_setdigitnum(long temp)
+{
+	int	digit_num;
+
+	digit_num = 0;
+	if (temp <= 0)
+		digit_num++;
+	while (temp)
+	{
+		temp /= 10;
+		digit_num++;
+	}
+	return (digit_num);
+}
+
+static void	ft_setnum(long temp, int i, char *num)
+{
+	while (temp > 0)
+	{
+		num[i] = (temp % 10) + '0';
+		temp /= 10;
+		i--;
+	}
+}
 
 char	*ft_itoa(int n)
 {
@@ -19,15 +44,8 @@ char	*ft_itoa(int n)
 	int		digit_num;
 	int		i;
 
-	digit_num = 0;
 	temp = n;
-	if (temp <= 0)
-		digit_num++;
-	while (temp)
-	{
-		temp /= 10;
-		digit_num++;
-	}
+	digit_num = ft_setdigitnum(temp);
 	num = malloc(sizeof(char) * (digit_num + 1));
 	if (!num)
 		return (NULL);
@@ -44,11 +62,6 @@ char	*ft_itoa(int n)
 		temp = -temp;
 	}
 	i = digit_num - 1;
-	while (temp > 0)
-	{
-		num[i] = (temp % 10) + '0';
-		temp /= 10;
-		i--;
-	}
+	ft_setnum(temp, i, num);
 	return (num);
 }

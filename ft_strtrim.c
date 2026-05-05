@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 18:26:26 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/28 11:48:30 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 13:45:12 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 13:45:15 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isinset(char c, const char *set)
+static int	ft_isinset(char c, const char *set)
 {
 	int	i;
 
@@ -26,49 +26,52 @@ int	ft_isinset(char c, const char *set)
 	return (0);
 }
 
-char	*ft_strtrim(char const *s1, char const *set)
+static size_t	ft_skip_left(char const *s1, char const *set)
+{
+	size_t	i;
+
+	i = 0;
+	while (s1[i] && ft_isinset(s1[i], set))
+		i++;
+	return (i);
+}
+
+static size_t	ft_skip_right(char const *s1, char const *set, size_t len)
+{
+	while (len > 0 && ft_isinset(s1[len - 1], set))
+		len--;
+	return (len);
+}
+
+static char	*ft_copy_trim(char const *s1, size_t start, size_t end)
 {
 	size_t	i;
 	size_t	j;
-	size_t	s1lenset;
-	size_t	setlen;
 	char	*str;
+
+	if (end <= start)
+		return (ft_strdup(""));
+	str = malloc((end - start) + 1);
+	if (!str)
+		return (NULL);
+	i = start;
+	j = 0;
+	while (i < end)
+		str[j++] = s1[i++];
+	str[j] = '\0';
+	return (str);
+}
+
+char	*ft_strtrim(char const *s1, char const *set)
+{
+	size_t	start;
+	size_t	end;
+	size_t	len;
 
 	if (!s1 || !set)
 		return (NULL);
-	i = 0;
-	j = 0;
-	s1lenset = 0;
-	setlen = 0;
-	while (set[setlen] != '\0')
-		setlen++;
-	while (s1[i] && ft_isinset(s1[i], set))
-	{
-		i++;
-	}
-	while (s1[s1lenset] != '\0')
-		s1lenset++;
-	while (ft_isinset(s1[s1lenset - 1], set))
-	{
-		s1lenset--;
-		j++;
-	}
-	if (s1lenset == 0)
-	{
-		str = (char *)malloc(1);
-		str[0] = '\0';
-		return (str);
-	}
-	str = (char *)malloc((s1lenset - i) + 1);
-	if (!str)
-		return (NULL);
-	j = 0;
-	while (i != s1lenset)
-	{
-		str[j] = s1[i];
-		i++;
-		j++;
-	}
-	str[j] = '\0';
-	return (str);
+	start = ft_skip_left(s1, set);
+	len = ft_strlen((char *)s1);
+	end = ft_skip_right(s1, set, len);
+	return (ft_copy_trim(s1, start, end));
 }

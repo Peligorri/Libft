@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/27 17:32:10 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/27 17:35:06 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:39:26 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:39:29 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <unistd.h>
 
 void	ft_putchar_fd(char c, int fd)
 {

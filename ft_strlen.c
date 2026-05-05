@@ -5,16 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:46:41 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:46:43 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 13:34:31 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 13:34:33 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
-int	ft_strlen(char *str)
+size_t	ft_strlen(const char *str)
 {
-	int	num;
-	int	i;
+	size_t	num;
+	size_t	i;
 
 	num = 0;
 	i = 0;

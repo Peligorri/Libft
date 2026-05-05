@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:45:12 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:45:15 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 13:26:12 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 13:26:14 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 char	*ft_strdup(const char *s)

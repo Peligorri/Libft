@@ -5,16 +5,17 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:46:11 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:46:13 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 13:33:43 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 13:33:45 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
-	size_t i;
-	size_t srclenset;
+	size_t	i;
+	size_t	srclenset;
 
 	i = 0;
 	srclenset = 0;

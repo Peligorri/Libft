@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 12:53:11 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 12:53:13 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 13:35:30 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 13:35:49 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_strncmp(const char *s1, const char *s2, size_t n)

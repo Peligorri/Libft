@@ -1,22 +1,28 @@
+*This project has been created as part of the 42 curriculum by jangonza*
+
 # Libft
-## What is Libft?
 
-Libft is the first individual project from the 42 cursus. In this project, we have to redo some of the functions from the standard C library. This might help us understand how these functions work and how to implement them. At 42, we can't use any library other than the unistd.h library, so we have to create our own library to use in future projects.
+## Description
+### What is Libft?
 
-## What does the project involve?
+Libft is the first individual project from the 42 cursus. In this project, we have to recreate some functions of the standard C library and create some new ones. We will then generate our own library that will be then used in our futures projects.
+
+This might help us understand how these functions work and how to implement them.
+
+### What does the project involve?
 
 It's divided into 3 sections:
         1.- Libc functions: Here we have some functions from the standard C library.
         2.- Additional functions: These are functions that will be useful in future projects.
-        3.- Bonus part: Here we reimplement functions that might be useful for linked list manipulation.
+        3.- Linked list: Here we reimplement functions that might be useful for linked list manipulation.
  
-## What is a Makefile and how do we use it?
+### What is a Makefile and how do we use it?
 
-A Makefile is a type of file used by the make utility. This utility specifies which parts of a program need to be compiled and sends the necessary commands to do so. In short, a Makefile automates the compilation process instead of doing it manually.
+A Makefile is a type of file used by the make utility. This file specifies which parts of a program need to be compiled and sends the necessary commands to do so. In short, a Makefile automates the compilation process instead of doing it manually.
 
-To use make, we first need to create a Makefile. To do this, it is enough to create a file named Makefile or makefile. Both names are valid, but the GNU manual recommends using Makefile because it appears near the top of directory listings, along with other important files such as README.
+To use make, we first need to create a Makefile. To do this, it is enough to create a file named Makefile or makefile. Both names are valid, but the GNU manual recommends using Makefile because it appears near the top of directory listings, along with other important files such as the README one.
 
-## Function list
+## Functions list
 
 ### Libc functions
         -`ft_isalpha`
@@ -54,7 +60,7 @@ To use make, we first need to create a Makefile. To do this, it is enough to cre
         -`ft_putendl_fd`
         -`ft_putnbr_fd`
         -`ft_striteri`
-### Bonus part
+### Linked list
         -`ft_lstnew`
         -`ft_lstadd_front`
         -`ft_lstsize`
@@ -65,7 +71,7 @@ To use make, we first need to create a Makefile. To do this, it is enough to cre
         -`ft_lstiter`
         -`ft_lstmap`
 
-## Compilation
+## Instructions
 
 First, clone the project repository, using the following commands in your terminal:
 
@@ -87,3 +93,7 @@ Finally, compile your program with:
 ```bash
 gcc main.c libft.a -I. -o program
 ```
+
+##Resources
+
+

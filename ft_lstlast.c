@@ -5,14 +5,14 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/28 14:45:12 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/28 14:49:14 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:32:45 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:32:47 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-t_list *ft_lstlast(t_list *lst)
+t_list	*ft_lstlast(t_list *lst)
 {
 	t_list	*lstcpy;
 

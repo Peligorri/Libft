@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:43:41 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 14:10:48 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:38:16 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:38:19 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)

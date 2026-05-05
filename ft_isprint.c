@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:42:33 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:42:35 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:10:12 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:10:15 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isprint(int c)

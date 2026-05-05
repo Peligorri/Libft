@@ -5,10 +5,11 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/24 13:41:53 by jangonza          #+#    #+#             */
-/*   Updated: 2026/04/24 13:41:55 by jangonza         ###   ########.fr       */
+/*   Created: 2026/05/05 11:09:11 by jangonza          #+#    #+#             */
+/*   Updated: 2026/05/05 11:09:13 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include "libft.h"
 
 int	ft_isascii(int c)
