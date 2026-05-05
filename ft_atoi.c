@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 10:38:09 by jangonza          #+#    #+#             */
-/*   Updated: 2026/05/05 10:42:19 by jangonza         ###   ########.fr       */
+/*   Updated: 2026/05/05 16:49:37 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,7 @@ static int	ft_putnum(const char *str, int num, int i, int neg)
 	return (num);
 }
 
-int	ft_atoi(const char *str)
+int	ft_atoi(const char *nptr)
 {
 	int	i;
 	int	num;
@@ -33,17 +33,17 @@ int	ft_atoi(const char *str)
 	i = 0;
 	num = 0;
 	neg = 0;
-	while (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13))
+	while (nptr[i] == ' ' || (nptr[i] >= 9 && nptr[i] <= 13))
 		i++;
-	if (str[i] == '-')
+	if (nptr[i] == '-')
 	{
 		neg = 1;
 		i++;
 	}
-	else if (str[i] == '+')
+	else if (nptr[i] == '+')
 		i++;
-	if (str[i] < '0' || str[i] > '9')
+	if (nptr[i] < '0' || nptr[i] > '9')
 		return (0);
-	num = ft_putnum(str, num, i, neg);
+	num = ft_putnum(nptr, num, i, neg);
 	return (num);
 }

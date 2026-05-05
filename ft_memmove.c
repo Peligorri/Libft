@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jangonza <jangonza@student.42urduliz.com>  +#+  +:+       +#+        */
+/*   By: jangonza <jangonza@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/05 11:38:38 by jangonza          #+#    #+#             */
-/*   Updated: 2026/05/05 11:38:41 by jangonza         ###   ########.fr       */
+/*   Updated: 2026/05/05 16:16:01 by jangonza         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_copyarray(const unsigned char *src2, unsigned char *dest2, size_t n)
+static void	ft_copyarray(const unsigned char *src2, unsigned char *dest2,
+	size_t n)
 {
 	size_t	i;
 

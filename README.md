@@ -94,6 +94,9 @@ Finally, compile your program with:
 gcc main.c libft.a -I. -o program
 ```
 
-##Resources
+## Resources
 
-
+https://elcodigoascii.com.ar/
+https://www.geeksforgeeks.org/cpp/write-memcpy/
+https://pythontutor.com/visualize.html#mode=display
+https://chatgpt.com/
