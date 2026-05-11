@@ -25,12 +25,12 @@ To use make, we first need to create a Makefile. To do this, it is enough to cre
 ## Functions list
 
 ### Libc functions
-        -`ft_isalpha`: 
-Checks  for  an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c)).  In some locales, there may be additional characters for which isalpha()  is  trueletters which are neither uppercase nor lowercase.
-        -`ft_isdigit`: 
+`ft_isalpha`: \
+Checks  for  an alphabetic character; in the standard "C" locale, it is equivalent to (isupper(c) || islower(c)).  In some locales, there may be additional characters for which isalpha()  is  trueletters which are neither uppercase nor lowercase.\
+`ft_isdigit`: \ 
 Checks for a digit (0 through 9).
-        -`ft_isalnum`: 
-Checks for an alphanumeric character; it is equivalent to  (isalpha(c) || isdigit(c)).
+`ft_isalnum`: \
+Checks for an alphanumeric character; it is equivalent to  (isalpha(c) || isdigit(c)). \
         -`ft_isascii`: 
 Checks  whether  c  is a 7-bit unsigned char value that fits into the ASCII character set.
         -`ft_isprint`: 
