@@ -140,10 +140,10 @@ gcc main.c libft.a -I. -o program
 ## Resources
 
 - https://elcodigoascii.com.ar/ \
-I used this website to check ASCII codes while I was programming the functions. \
+I used this website to check ASCII codes while I was programming the functions. 
 - https://www.geeksforgeeks.org/cpp/write-memcpy/ \
-This website helped me understand the differences between the memcpy and memmove functions. It was very useful for learning how they work. \
+This website helped me understand the differences between the memcpy and memmove functions. It was very useful for learning how they work. 
 - https://pythontutor.com/visualize.html#mode=display \
-Python Tutor was a very useful tool for seeing where my code crashes and how to fix it. \
+Python Tutor was a very useful tool for seeing where my code crashes and how to fix it. 
 - https://chatgpt.com/ \
-I used ChatGPT as a *Moulinette* to check whether my code was correct or not. It was also useful for better understanding what the functions do. Finally, I used it to improve my English texts so they look more polished and professional. I never used it to figure out how to write the code or to get direct answers for any function. \
+I used ChatGPT as a *Moulinette* to check whether my code was correct or not. It was also useful for better understanding what the functions do. Finally, I used it to improve my English texts so they look more polished and professional. I never used it to figure out how to write the code or to get direct answers for any function. 
