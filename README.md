@@ -11,9 +11,9 @@ This might help us understand how these functions work and how to implement them
 
 ### What does the project involve?
 
-It's divided into 3 sections:
-        1.- Libc functions: Here we have some functions from the standard C library.
-        2.- Additional functions: These are functions that will be useful in future projects.
+It's divided into 3 sections: \
+        1.- Libc functions: Here we have some functions from the standard C library. \
+        2.- Additional functions: These are functions that will be useful in future projects. \
         3.- Linked list: Here we reimplement functions that might be useful for linked list manipulation.
  
 ### What is a Makefile and how do we use it?
@@ -70,7 +70,7 @@ The atoi() function converts the initial portion of the string pointed to by str
 `ft_calloc`: \
 The calloc() function allocates memory for an array  of  n  elements  of size bytes each and returns a pointer to the allocated memory.  The memory  is  set to zero.  If n or size is 0, then calloc() returns a unique pointer value that can later be successfully passed to free(). \
 `ft_strdup`: \
-The  strdup()  function returns a pointer to a new string which is a duplicate of the string s.  Memory for the new  string  is  obtained  with malloc(3), and can be freed with free(3). \
+The  strdup()  function returns a pointer to a new string which is a duplicate of the string s.  Memory for the new  string  is  obtained  with malloc(3), and can be freed with free(3). 
 ### Additional functions
 `ft_substr`: \
 Allocates memory (using malloc(3)) and returns a substring from the string ’s’. The substring starts at index ’start’ and has a maximum length of ’len’. \
@@ -93,7 +93,7 @@ Outputs the string ’s’ to the specified file descriptor followed by a newlin
 `ft_putnbr_fd`: \
 Outputs the integer ’n’ to the specified file descriptor. \
 `ft_striteri`: \
-Applies the function ’f’ to each character of the string passed as argument, passing its index as the first argument. Each character is passed by address to ’f’ so it can be modified if necessary. \
+Applies the function ’f’ to each character of the string passed as argument, passing its index as the first argument. Each character is passed by address to ’f’ so it can be modified if necessary. 
 ### Linked list
 `ft_lstnew`: \
 Allocates memory (using malloc(3)) and returns a new node. The ’content’ member variable is initialized with the given parameter ’content’. The variable ’next’ is initialized to NULL. \
@@ -112,7 +112,7 @@ Deletes and frees the given node and all its successors, using the function ’d
 `ft_lstiter`: \
 Iterates through the list ’lst’ and applies the function ’f’ to the content of each node. \
 `ft_lstmap`: \
-Iterates through the list ’lst’, applies the function ’f’ to each node’s content, and creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of a node if needed. \
+Iterates through the list ’lst’, applies the function ’f’ to each node’s content, and creates a new list resulting of the successive applications of the function ’f’. The ’del’ function is used to delete the content of a node if needed. 
 
 ## Instructions
 
